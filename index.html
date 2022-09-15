@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Boostrap Project</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body id="body">
+    <!-- NAVBAR -->
+
+    <!-- <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://seeklogo.com/images/G/GT-R-logo-F1EEE764F4-seeklogo.com.png"
+            alt="logo"
+            width="100"
+          />
+        </a>
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourcars">our cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skyline">SKYLINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://wallpaperaccess.com/full/785704.jpg"
+            class="d-block w-100"
+            alt="img1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>JDM</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              reiciendis.
+            </p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/originals/97/ee/92/97ee928c1efc5c7d65213d49770ffd1d.jpg"
+            class="d-block w-100"
+            alt="img2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>GOAT ENGINE</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/originals/10/62/32/106232d5acc68d4d8cfc5fad8e070534.jpg"
+            class="d-block w-100"
+            alt="img3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Power of Skyline</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ABOUT-US -->
+    <main class="text-center">
+      <section id="about" class="container bg-light p-3">
+        <h2 class="display-6 text-danger mb-4">ABOUT US</h2>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <h4>GTR is global</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <i class="fas fa-headset fa-2x"></i>
+            <h4>Fulltime Support</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque? Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ipsa, quos.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h4>Become a Drift God</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTRUCTORS -->
+      <section id="instructors" class="container bg-dark p-3">
+        <h2 class="display-6 text-danger">OUR TEAM</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/PaulWalkerEdit-1.jpg"
+                class="card-img-top"
+                alt="t1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paul Walker</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://tr.web.img4.acsta.net/pictures/15/10/14/11/30/335169.jpg"
+                class="card-img-top"
+                alt="t2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vin Diesel</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://www.filmler.com/wp-content/uploads/2020/10/vnZT5tbEWakOeLVITBuAaN645cm.jpg"
+                class="card-img-top"
+                alt="t3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sung Kang</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Michelle_Rodriguez_at_the_New_York_Fashion_Week_crop.jpg/220px-Michelle_Rodriguez_at_the_New_York_Fashion_Week_crop.jpg"
+                class="card-img-top"
+                alt="t4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Michelle Rodriguez</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://tr.web.img4.acsta.net/pictures/16/09/21/11/33/305212.jpg"
+                class="card-img-top"
+                alt="t5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jordana Brewster</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ludacris_2008.jpg/640px-Ludacris_2008.jpg"
+                class="card-img-top"
+                alt="t6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ludacris</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDENTS -->
+      <section id="ourcars" class="container bg-light p-3">
+        <h2 class="display-6 text-danger">OUR CARS</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
+              doloremque quam! In sit aliquam sapiente ad dicta facilis
+              explicabo cupiditate laudantium repudiandae, dignissimos, aliquid
+              aut quos omnis repellat. Eaque quos, nobis illo dolor alias labore
+              obcaecati rem odit explicabo maiores?
+            </p>
+            <button class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://www.pngitem.com/pimgs/m/105-1055688_gtr-pixel-art-hd-png-download.png"
+              width="70%"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSES -->
+      <section id="skyline" class="container bg-dark p-3">
+        <h2 class="display-6 text-danger">CARS</h2>
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              R32
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ds-images"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              R33
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dev-images"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              R34
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row g-2">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://pbs.twimg.com/media/Eb7vkK6U8AAtUMq.jpg"
+                >
+                  <img
+                    src="https://pbs.twimg.com/media/Eb7vkK6U8AAtUMq.jpg"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://pbs.twimg.com/media/FPaHLKRaQAEKHw7.jpg:large"
+                >
+                  <img
+                    src="https://pbs.twimg.com/media/FPaHLKRaQAEKHw7.jpg:large"
+                    class="img-thumbnail"
+                    alt="fs2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://cdna.artstation.com/p/assets/images/images/014/829/578/large/letov-andrew-project2.jpg?1545765292"
+                >
+                  <img
+                    src="https://cdna.artstation.com/p/assets/images/images/014/829/578/large/letov-andrew-project2.jpg?1545765292"
+                    class="img-thumbnail"
+                    alt="fs3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://pbs.twimg.com/media/CEGa_pWWAAAjpo6.jpg"
+                >
+                  <img
+                    src="https://pbs.twimg.com/media/CEGa_pWWAAAjpo6.jpg"
+                    class="img-thumbnail"
+                    alt="fs4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ds-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row g-2">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://live.staticflickr.com/3756/9709991600_852733ff52_b.jpg"
+                >
+                  <img
+                    src="https://live.staticflickr.com/3756/9709991600_852733ff52_b.jpg"
+                    class="img-thumbnail"
+                    alt="ds1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://pbs.twimg.com/media/FU58h6PWYAEtcIH.jpg"
+                >
+                  <img
+                    src="https://pbs.twimg.com/media/FU58h6PWYAEtcIH.jpg"
+                    class="img-thumbnail"
+                    alt="ds2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://maxtondesign.com/eng_pl_SPOILER-NISSAN-SKYLINE-R33-1375_2.jpg"
+                >
+                  <img
+                    src="https://maxtondesign.com/eng_pl_SPOILER-NISSAN-SKYLINE-R33-1375_2.jpg"
+                    class="img-thumbnail"
+                    alt="ds3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://arabam-blog.mncdn.com/wp-content/uploads/2021/02/400R.jpg"
+                >
+                  <img
+                    src="https://arabam-blog.mncdn.com/wp-content/uploads/2021/02/400R.jpg"
+                    class="img-thumbnail"
+                    alt="ds4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="dev-images"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row g-2">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://upload.wikimedia.org/wikipedia/commons/7/7b/NISSAN_R34-Skyline_GTR.jpg"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7b/NISSAN_R34-Skyline_GTR.jpg"
+                    class="img-thumbnail"
+                    alt="ops1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://cdn1.ntv.com.tr/gorsel/ixTWEgxp-ky7UvXKFyqWog.jpg?width=1000&mode=crop&scale=both"
+                >
+                  <img
+                    src="https://cdn1.ntv.com.tr/gorsel/ixTWEgxp-ky7UvXKFyqWog.jpg?width=1000&mode=crop&scale=both"
+                    class="img-thumbnail"
+                    alt="ops2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://pbs.twimg.com/media/B5CMVbRIAAAt7tn.jpg"
+                >
+                  <img
+                    src="https://pbs.twimg.com/media/B5CMVbRIAAAt7tn.jpg"
+                    class="img-thumbnail"
+                    alt="ops3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="https://live.staticflickr.com/8526/8547092639_a9440fe4fe_b.jpg"
+                >
+                  <img
+                    src="https://live.staticflickr.com/8526/8547092639_a9440fe4fe_b.jpg"
+                    class="img-thumbnail"
+                    alt="ops4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="container bg-light p-3">
+        <h2 class="display-6 text-danger">CONTACT</h2>
+
+        <article id="form">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, sit nulla numquam sunt esse aliquam? Quae, delectus!
+            Saepe, explicabo dolor!
+          </p>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <i class="fas fa-phone fa-2x text-danger"></i>
+              <h4>Telephone</h4>
+              <a href="tel:+90234556565">+90234556565</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp fa-3x text-danger"></i>
+              <h4>Whatsapp</h4>
+              <a href="https://wa.me/+90234556565">+90234556565</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope fa-2x text-danger"></i>
+              <h4>email</h4>
+              <a href="mailto:info@gtr.com">info@gtr.com</a>
+            </div>
+          </div>
+
+          <form class="row g-3 mt-4">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="enter your email"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Enter your subject"
+              />
+            </div>
+
+            <div class="col-12 form-floating">
+              <textarea
+                type="text"
+                class="form-control"
+                id="comment"
+                placeholder="Enter your comments"
+              ></textarea>
+              <label for="comment">Comments</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger" style="width: 7rem">
+                Submit
+              </button>
+            </div>
+          </form>
+        </article>
+
+        <article id="location" class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322678.1897066254!2d136.1991575268541!3d35.58325590356083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e7c8394303c3%3A0x9304131a75f2ea9e!2sJapan%20Motor%20Co.%2C%20Ltd!5e0!3m2!1sen!2str!4v1663234881930!5m2!1sen!2str"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+        <a href="#"> <i class="fab fa-youtube"></i></a>
+        <a href="#"> <i class="fab fa-linkedin"></i></a>
+        <a href="#"> <i class="fab fa-instagram"></i></a>
+      </article>
+
+      <article class="p-4 h6">
+        &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright by Mustafa Bilen
+      </article>
+    </footer>
+
+    <!-- UP-BTN -->
+    <a class="btn-up" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
+  </body>
+</html>
